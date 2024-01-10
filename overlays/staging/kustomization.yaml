@@ -1,0 +1,16 @@
+resources:
+  - ../../base
+
+namespace: todo-app
+commonLabels:
+  env: staging
+
+images:
+  - name: khhini/todo-app-api
+    newTag: rust-v0
+
+configMapGenerator:
+  - name: todo-app-api-config
+    literals:
+      - LISTENER.HOST=0.0.0.0
+      - LISTENER.PORT=8080
