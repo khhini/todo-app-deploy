@@ -7,7 +7,7 @@ commonLabels:
 
 images:
   - name: khhini/todo-app-api
-    newTag: rust-v1.0.0
+    newTag: rust-v0
 
 configMapGenerator:
   - name: todo-app-api-config
