@@ -14,3 +14,12 @@ configMapGenerator:
     literals:
       - LISTENER.HOST=0.0.0.0
       - LISTENER.PORT=8080
+
+patches:
+  - target:
+      kind: Deployment
+      name: todo-app-api
+    patch: |-
+      - op: replace
+        path: /spec/replicas
+        value: 2
