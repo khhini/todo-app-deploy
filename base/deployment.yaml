@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: todo-app-api
-          image: khhini/todo-app-api:rust-v0
+          image: asia-southeast2-docker.pkg.dev/khhini-argocd-gitops-exp/khhini-dev/todo-app-api:latest
           ports:
             - containerPort: 8080
           env:

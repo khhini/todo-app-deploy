@@ -6,8 +6,8 @@ commonLabels:
   env: staging
 
 images:
-  - name: khhini/todo-app-api
-    newTag: rust-v1.0.0
+  - name: asia-southeast2-docker.pkg.dev/khhini-argocd-gitops-exp/khhini-dev/todo-app-api
+    newTag: rust-8819d8c
 
 configMapGenerator:
   - name: todo-app-api-config
