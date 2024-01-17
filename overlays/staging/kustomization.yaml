@@ -7,7 +7,7 @@ commonLabels:
 
 images:
   - name: asia-southeast2-docker.pkg.dev/khhini-argocd-gitops-exp/khhini-dev/todo-app-api
-    newTag: rust-538a31d
+    newTag: rust-f281360
 
 configMapGenerator:
   - name: todo-app-api-config
